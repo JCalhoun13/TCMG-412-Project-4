@@ -1,0 +1,14 @@
+import urllib.request
+
+def main():
+    weburl = urllib.request.urlopen("https://s3.amazonaws.com/tcmg476/http_access_log")
+    print("result code:", weburl.getcode())
+    data = weburl.read()
+    #print(data)
+if __name__ == "__main__":
+    main()
+    
+    
+    
+    
+#line 7 is hashtagged because it probably shouldn't be opening the page like it is
